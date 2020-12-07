@@ -1,6 +1,6 @@
 <template>
   <div>
-      <ul>
+      <ul id="fruit-grid">
           <fruit-list-item v-for="(fruit, index) in fruits" :fruit="fruit" :key="index"></fruit-list-item>
       </ul>
   </div>
@@ -19,5 +19,17 @@ export default {
 </script>
 
 <style>
+
+#fruit-grid {
+    display: grid;
+    grid-template-areas: 
+        'fruit fruit fruit'
+        'fruit fruit fruit'
+        'fruit fruit fruit'
+        'fruit fruit fruit'
+        'fruit fruit fruit';
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: None;
+}
 
 </style>
