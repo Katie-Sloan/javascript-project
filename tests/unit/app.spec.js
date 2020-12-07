@@ -12,7 +12,7 @@ describe('App', () => {
         fetch.reset()
     })
     it('should have 2 fruits', () => {
-        expect(wrapper.vm.countries).toHaveLength(2)
+        expect(wrapper.vm.fruits).toHaveLength(2)
     });
 
     it('should be able to select a fruit', () => {
