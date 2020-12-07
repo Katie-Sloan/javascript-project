@@ -9,9 +9,10 @@
 </template>
 
 <script>
-import { eventBus } from './main.js'
-import FruitsList from './components/FruitsList.vue'
-import FruitDetail from './components/FruitDetail.vue'
+import { eventBus } from './main.js';
+import FruitsList from './components/FruitsList.vue';
+import FruitDetail from './components/FruitDetail.vue';
+import FruitService from '@/services/FruitService';
 
 export default {
   name: "app",
@@ -22,13 +23,17 @@ export default {
     }
   },
   mounted(){
-    fetch('https://fruityvice.com/api/fruit/all')
-    .then(res => res.json())
-    .then(data => this.fruits = data.results)
+    this.fetchFruits();
 
     eventBus.$on('fruit-selected', (fruit) => {
       this.selectedFruit = fruit
     })
+  },
+  methods: {
+    fetchFruits() {
+      FruitService.getFruits()
+        .then(fruits => this.fruits = fruits);
+    }
   },
   components: {
     "fruits-list": FruitsList,
