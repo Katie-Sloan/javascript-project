@@ -1,28 +1,42 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Fruits</h1>
+    <div>
+      <fruits-list :fruits="fruits"></fruits-list>
+      <fruit-detail :fruit="selectedFruit"></fruit-detail>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { eventBus } from './main.js'
+import FruitsList from './components/FruitsList.vue'
+import FruitDetail from './components/FruitDetail.vue'
 
 export default {
-  name: 'App',
+  name: "app",
+  data(){
+    return {
+      fruits: [],
+      selectedFruit: null 
+    }
+  },
+  mounted(){
+    fetch('https://fruityvice.com/api/fruit/all')
+    .then(res => res.json())
+    .then(data => this.fruits = data.results)
+
+    eventBus.$on('fruit-selected', (fruit) => {
+      this.selectedFruit = fruit
+    })
+  },
   components: {
-    HelloWorld
+    "fruits-list": FruitsList,
+    "fruit-detail": FruitDetail
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
