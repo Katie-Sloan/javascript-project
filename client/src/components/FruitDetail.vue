@@ -1,6 +1,6 @@
 <template>
   <div v-if="fruit">
-      <h2>{{fruit.name}}</h2>
+      <h2>{{fruit.name}}</h2> {{fruit.emoji}}
       <br>
       <h4><b>Order:</b> {{fruit.order}} </h4> 
       <p>Orders contain different families. Each order is divided into families.</p>

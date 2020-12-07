@@ -5,7 +5,7 @@ db.fruits.insertMany([
     {
         "genus": "Malus",
         "name": "Apple",
-
+        "emoji": "🍎",
         "family": "Rosaceae",
         "order": "Rosales",
         "nutritions": {
@@ -18,7 +18,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Prunus",
         "name": "Apricot",
-
+        "emoji": "🍑",
         "family": "Rosaceae",
         "order": "Rosales",
         "nutritions": {
@@ -31,7 +31,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Musa",
         "name": "Banana",
-
+        "emoji": "🍌",
         "family": "Musaceae",
         "order": "Zingiberales",
         "nutritions": {
@@ -44,7 +44,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Fragaria",
         "name": "Blueberry",
-
+        "emoji": "🫐",
         "family": "Rosaceae",
         "order": "Rosales",
         "nutritions": {
@@ -57,7 +57,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Prunus",
         "name": "Cherry",
-
+        "emoji": "🍒",
         "family": "Rosaceae",
         "order": "None",
         "nutritions": {
@@ -70,7 +70,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Citrus",
         "name": "Lemon",
-
+        "emoji": "🍋",
         "family": "Rutaceae",
         "order": "Sapindales",
         "nutritions": {
@@ -83,7 +83,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Mangifera",
         "name": "Mango",
-
+        "emoji": "🥭",
         "family": "Anacardiaceae",
         "order": "Sapindales",
         "nutritions": {
@@ -96,7 +96,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Citrus",
         "name": "Orange",
-
+        "emoji": "🍊",
         "family": "Rutaceae",
         "order": "Sapindales",
         "nutritions": {
@@ -109,7 +109,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Pyrus",
         "name": "Pear",
-
+        "emoji": "🍐",
         "family": "Rosaceae",
         "order": "Rosales",
         "nutritions": {
@@ -122,7 +122,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Ananas",
         "name": "Pineapple",
-
+        "emoji": "🍍",
         "family": "Bromeliaceae",
         "order": "Poales",
         "nutritions": {
@@ -135,7 +135,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Rubus",
         "name": "Raspberry",
-
+        "emoji": "",
         "family": "Rosaceae",
         "order": "Rosales",
         "nutritions": {
@@ -148,7 +148,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Fragaria",
         "name": "Strawberry",
-
+        "emoji": "🍓",
         "family": "Rosaceae",
         "order": "Rosales",
         "nutritions": {
@@ -161,7 +161,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Solanum",
         "name": "Tomato",
-
+        "emoji": "🍅",
         "family": "Solanaceae",
         "order": "Solanales",
         "nutritions": {
@@ -174,7 +174,7 @@ db.fruits.insertMany([
     }, {
         "genus": "Citrullus",
         "name": "Watermelon",
-
+        "emoji": "🍉",
         "family": "Cucurbitaceae",
         "order": "Cucurbitales",
         "nutritions": {
