@@ -30,6 +30,7 @@ export default {
         'fruit fruit fruit';
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: None;
+    padding: 10px 10px 10px 10px;
 }
 
 </style>

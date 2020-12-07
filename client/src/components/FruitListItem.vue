@@ -1,5 +1,8 @@
 <template>
-  <li v-on:click="handleClick">{{fruit.name}}</li>
+  <li v-on:click="handleClick">
+      <p style="font-size:5rem;width:100%;text-align:center;" id="fruit-emoji">{{fruit.emoji}}</p>
+      <p id="fruit-name" >{{fruit.name}}</p>
+    </li>
 </template>
 
 <script>
@@ -18,12 +21,20 @@ export default {
 <style>
 
 li {
-    width: 35%;
+    width: 75%;
     border: 1px;
     background-color: palegoldenrod;
     padding: 20px;
     margin: 10px;
     text-align: center;
+    border-radius: 5px;
 }
 
+.fruit-emoji {
+
+}
+
+.fruit-name {
+
+}
 </style>
