@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Fruits</h1>
+    <h1>FRUITS</h1>
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
       <fruit-detail :fruit="selectedFruit"></fruit-detail>
@@ -43,5 +43,9 @@ export default {
 </script>
 
 <style>
+
+div > h1 {
+  text-align: center;
+}
 
 </style>

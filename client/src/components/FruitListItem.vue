@@ -17,5 +17,13 @@ export default {
 
 <style>
 
+li {
+    width: 35%;
+    border: 1px;
+    background-color: palegoldenrod;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
 
 </style>
