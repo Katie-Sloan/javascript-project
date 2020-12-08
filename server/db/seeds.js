@@ -4,7 +4,7 @@ db.dropDatabase();
 db.fruits.insertMany([
     {
         "genus": "Malus",
-        "name": "Apple",
+        "name": "Apples",
         "emoji": "🍎",
         "family": "Rosaceae",
         "order": "Rosales",
@@ -22,7 +22,7 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Prunus",
-        "name": "Apricot",
+        "name": "Apricots",
         "emoji": "🍑",
         "family": "Rosaceae",
         "order": "Rosales",
@@ -40,13 +40,13 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Musa",
-        "name": "Banana",
+        "name": "Bananas",
         "emoji": "🍌",
         "family": "Musaceae",
         "order": "Zingiberales",
         "origin": {
             "country": "Indonesia",
-            "latitude": 0.7893,
+            "latitude": 0-0.7893,
             "longitude": 113.9213 
         },
         "nutritions": {
@@ -58,7 +58,7 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Actinidia",
-        "name": "Kiwi",
+        "name": "Kiwis",
         "emoji": "🥝",
         "family": "Actinidiaceae",
         "order": "Ericales",
@@ -76,7 +76,7 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Prunus",
-        "name": "Cherry",
+        "name": "Cherries",
         "emoji": "🍒",
         "family": "Rosaceae",
         "order": "None",
@@ -94,7 +94,7 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Citrus",
-        "name": "Lemon",
+        "name": "Lemons",
         "emoji": "🍋",
         "family": "Rutaceae",
         "order": "Sapindales",
@@ -112,7 +112,7 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Mangifera",
-        "name": "Mango",
+        "name": "Mangos",
         "emoji": "🥭",
         "family": "Anacardiaceae",
         "order": "Sapindales",
@@ -130,7 +130,7 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Citrus",
-        "name": "Orange",
+        "name": "Oranges",
         "emoji": "🍊",
         "family": "Rutaceae",
         "order": "Sapindales",
@@ -148,7 +148,7 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Pyrus",
-        "name": "Pear",
+        "name": "Pears",
         "emoji": "🍐",
         "family": "Rosaceae",
         "order": "Rosales",
@@ -166,14 +166,14 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Ananas",
-        "name": "Pineapple",
+        "name": "Pineapples",
         "emoji": "🍍",
         "family": "Bromeliaceae",
         "order": "Poales",
         "origin": {
             "country": "Brazil",
-            "latitude": 14.2350,
-            "longitude": 51.9253
+            "latitude": 0-14.2350,
+            "longitude": 0-51.9253
         },
         "nutritions": {
             "carbohydrates": 13.12,
@@ -202,14 +202,14 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Fragaria",
-        "name": "Strawberry",
+        "name": "Strawberries",
         "emoji": "🍓",
         "family": "Rosaceae",
         "order": "Rosales",
         "origin": {
             "country": "North America",
             "latitude": 54.5260,
-            "longitude": 105.2551
+            "longitude": 0-105.2551
         },
         "nutritions": {
             "carbohydrates": 5.5,
@@ -220,14 +220,14 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Solanum",
-        "name": "Tomato",
+        "name": "Tomatoes",
         "emoji": "🍅",
         "family": "Solanaceae",
         "order": "Solanales",
         "origin": {
             "country": "The Andes Mountains",
-            "latitude": 21.1608,
-            "longitude": 66.7752
+            "latitude": 0-21.1608,
+            "longitude": 0-66.7752
         },
         "nutritions": {
             "carbohydrates": 3.9,
@@ -244,7 +244,7 @@ db.fruits.insertMany([
         "order": "Cucurbitales",
         "origin": {
             "country": "South Africa",
-            "latitude": 30.5595,
+            "latitude": 0-30.5595,
             "longitude": 22.9375
         },
         "nutritions": {
@@ -257,14 +257,14 @@ db.fruits.insertMany([
     },
     {
         "genus": "Persea",
-        "name": "Avocado",
+        "name": "Avocados",
         "emoji": "🥑",
         "family": "Lauraceae",
         "order": "Laurales",
         "origin": {
             "country": "Mexico",
-            "latitude": 23.6345,
-            "longitude": 102.5528
+            "latitude": 23.6260,
+            "longitude": 0-102.5375
         },
         "nutritions": {
             "carbohydrates": 8.5,

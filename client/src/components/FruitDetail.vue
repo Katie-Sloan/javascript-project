@@ -16,9 +16,9 @@
           Calories: {{fruit.nutritions.calories}}kcal
           Sugar: {{fruit.nutritions.sugar}}g  
       </p>
-      <p> {{fruit.name}}s originate from {{fruit.origin.country}}, you can see where this is on the map below!
+      <p> {{fruit.name}} originate from {{fruit.origin.country}}, you can see where this is on the map below!
       <div id="mapid">
-          <l-map :zoom=2 :center="[ fruit.origin.latitude, fruit.origin.longitude ]">
+          <l-map :zoom=3 :center="[ fruit.origin.latitude, fruit.origin.longitude ]">
               <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>
               <l-marker :lat-lng="[ fruit.origin.latitude, fruit.origin.longitude ]"></l-marker>
           </l-map>
