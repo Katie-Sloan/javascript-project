@@ -16,13 +16,18 @@
           Calories: {{fruit.nutritions.calories}}kcal
           Sugar: {{fruit.nutritions.sugar}}g  
       </p>
+      <pie-chart :nutritions="fruit.nutritions"></pie-chart>
   </div>
 </template>
 
 <script>
+import PieChart from "./PieChart.vue";
 export default {
     name: 'fruit-detail',
-    props: ['fruit']
+    props: ['fruit'],
+    components: {
+        "pie-chart": PieChart
+    }
 }
 </script>
 
