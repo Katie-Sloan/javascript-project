@@ -17,7 +17,7 @@
           Sugar: {{fruit.nutritions.sugar}}g  
       </p>
       <div id="mapid">
-          <l-map :zoom=13 :centre="[ fruit.origin.latitude, fruit.origin.longitude ]">
+          <l-map :zoom=2 :center="[ fruit.origin.latitude, fruit.origin.longitude ]">
               <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>
               <l-marker :lat-lng="[ fruit.origin.latitude, fruit.origin.longitude ]"></l-marker>
           </l-map>
@@ -28,6 +28,14 @@
 </template>
 
 <script>
+import L from 'leaflet';
+delete L.Icon.Default.prototype._getIconUrl
+L.Icon.Default.imagePath = '/';
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('../../node_modules/leaflet/dist/images/marker-icon-2x.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png'), 
+});
 export default {
     name: 'fruit-detail',
     props: ['fruit']
