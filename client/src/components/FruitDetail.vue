@@ -27,5 +27,7 @@ export default {
 </script>
 
 <style>
-
+ div {
+     padding: 10px;
+ }
 </style>

@@ -4,7 +4,7 @@
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
      
-      <modal name='fruit-modal'>
+      <modal id='popup' name='fruit-modal' :width="800" :height="500" :adaptive="true" :draggable="true" :reset="true">
       <fruit-detail :fruit="selectedFruit"></fruit-detail>
       </modal>
     </div>
@@ -44,11 +44,7 @@ export default {
         .then(fruits => this.fruits = fruits);
     },
     show () {
-      this.$modal.show('fruit-modal', 
-      { height: 'auto' },
-      { draggable: true }
-
-      );
+      this.$modal.show('fruit-modal');
     },
     hide () {
       this.$modal.hide('fruit-modal');
@@ -68,5 +64,7 @@ export default {
 div > h1 {
   text-align: center;
 }
+
+
 
 </style>
