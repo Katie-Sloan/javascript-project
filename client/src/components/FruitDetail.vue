@@ -16,6 +16,9 @@
           Calories: {{fruit.nutritions.calories}}kcal
           Sugar: {{fruit.nutritions.sugar}}g  
       </p>
+      <div id="mapid">
+          L.map('mapid').setView([{{fruit.origin.latitude}}, {{fruit.origin.longitude}}], 13);
+      </div>
   </div>
 </template>
 
@@ -27,5 +30,7 @@ export default {
 </script>
 
 <style>
-
+#mapid {
+    height: 180px;
+}
 </style>
