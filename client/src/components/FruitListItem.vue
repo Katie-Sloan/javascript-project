@@ -30,6 +30,12 @@ li {
     border-radius: 5px;
 }
 
+li:hover{
+  color: #ff7a59;
+  border: #ff7a59 solid 1px;
+  background:#fff;
+}
+
 .fruit-emoji {
 
 }
