@@ -3,7 +3,7 @@
     <h1>FRUITS</h1>
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
-      <fruit-detail :fruit="selectedFruit"></fruit-detail>
+      <fruit-detail v-if="selectedFruit" :fruit="selectedFruit"></fruit-detail>
     </div>
   </div>
 </template>
