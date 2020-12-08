@@ -28,6 +28,7 @@ li {
     margin: 10px;
     text-align: center;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .fruit-emoji {

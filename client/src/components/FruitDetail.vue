@@ -1,5 +1,5 @@
 <template>
-  <div v-if="fruit">
+  <div id="deets" v-if="fruit">
       <h2>{{fruit.name}}</h2> {{fruit.emoji}}
       <br>
       <h4><b>Order:</b> {{fruit.order}} </h4> 
@@ -27,8 +27,7 @@ export default {
 </script>
 
 <style>
- div {
+ #deets {
      padding: 10px;
-     cursor: pointer;
  }
 </style>
