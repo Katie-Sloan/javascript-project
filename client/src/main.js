@@ -10,4 +10,10 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-Vue.use(VModal)
+Vue.use(VModal, {
+   
+    draggable: true,
+    resizable: true,
+    height: 'auto'
+  }
+)
