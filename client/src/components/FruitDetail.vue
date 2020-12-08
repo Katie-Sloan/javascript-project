@@ -17,8 +17,13 @@
           Sugar: {{fruit.nutritions.sugar}}g  
       </p>
       <div id="mapid">
-          L.map('mapid').setView([{{fruit.origin.latitude}}, {{fruit.origin.longitude}}], 13);
+          <v-map :zoom=13 :centre="[ {{fruit.origin.latitude}}, {{fruit.origin.longitude}} ]">
+              <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></v-tilelayer>
+              <v-marker :lat-lng="[ {{fruit.origin.latitude}}, {{fruit.origin.longitude}} ]"></v-marker>
+          </v-map>
       </div>
+          <!-- L.map('mapid').setView([{{fruit.origin.latitude}}, {{fruit.origin.longitude}}], 13); -->
+      <!-- </div> -->
   </div>
 </template>
 
