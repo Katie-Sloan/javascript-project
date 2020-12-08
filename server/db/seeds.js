@@ -254,5 +254,24 @@ db.fruits.insertMany([
             "calories": 30,
             "sugar": 6
         }
+    },
+    {
+        "genus": "Persea",
+        "name": "Avocado",
+        "emoji": "🥑",
+        "family": "Lauraceae",
+        "order": "Laurales",
+        "origin": {
+            "country": "Mexico",
+            "latitude": 23.6345,
+            "longitude": 102.5528
+        },
+        "nutritions": {
+            "carbohydrates": 8.5,
+            "protein": 2,
+            "fat": 15,
+            "calories": 160,
+            "sugar": 0.7
+        }
     }
 ])
