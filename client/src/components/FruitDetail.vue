@@ -27,7 +27,7 @@ export default {
     props: ['fruit'],
     components: {
         "pie-chart": PieChart
-    }
+    },
 }
 </script>
 
