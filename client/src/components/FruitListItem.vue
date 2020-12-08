@@ -23,12 +23,16 @@ export default {
 li {
     width: 75%;
     border: 1px;
-    background-color: palegoldenrod;
+    background-color: rgba(253, 243, 129, 0.906);
     padding: 20px;
     margin: 10px;
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 153, 0);
+    font-size: 18pt;
+    box-shadow: 5px 10px 5px orange;
 }
 
 .fruit-emoji {

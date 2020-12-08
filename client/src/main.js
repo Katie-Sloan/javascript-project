@@ -11,3 +11,4 @@ new Vue({
 }).$mount('#app')
 
 Vue.use(VModal)
+

@@ -29,5 +29,8 @@ export default {
 <style>
  #deets {
      padding: 10px;
+     font-family: 'Montserrat', sans-serif;
+     background-color: rgba(253, 243, 129, 0.906);
+     color: orange;
  }
 </style>

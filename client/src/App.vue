@@ -4,7 +4,7 @@
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
      
-      <modal id='popup' name='fruit-modal' :width="800" :height='auto' :adaptive="true" :draggable="true" :reset="true">
+      <modal class='popup' name='fruit-modal' :width="800" :height='auto' :adaptive="true" :resizable="true" :draggable="true" :reset="true" :styles="popup">
       <fruit-detail :fruit="selectedFruit"></fruit-detail>
       </modal>
     </div>
@@ -65,8 +65,14 @@ export default {
 
 div > h1 {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60pt;
+  color: orange;
 }
 
+.popup {
+  box-shadow: 5px 10px 5px orange;
+}
 
 
 </style>
