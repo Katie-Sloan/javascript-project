@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>FRUITS</h1>
+    <h1>Fruits Of The World!</h1>
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
       <fruit-detail :fruit="selectedFruit"></fruit-detail>
@@ -46,6 +46,14 @@ export default {
 
 div > h1 {
   text-align: center;
+}
+
+body {
+  background: url('./assets/fruit-background.jpg');
+  height: 25%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 </style>
