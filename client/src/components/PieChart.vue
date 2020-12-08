@@ -35,23 +35,36 @@ export default {
     },
     plotOptions: {
       pie: {
-        innerSize: 100,
-        depth: 45
+        allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+            }
       }
     },
     series: [
       {
-        name: "Delivered amount",
+        type: 'pie',
+        name: 'Browser share',
+        keys: ['name', 'y', 'sliced', 'selected'],
         data: [
-        //   ["Sugar", (nutritions.sugar)],
-          ["Fat", 1]
-        //   ["Reddish (bag)", 5],
-        //   ["Grapes (bunch)", 1]
+            ['Carbohydrates', this.nutritions.carbohydrates],
+            ['Fat', this.nutritions.fat],
+            ['Protein', this.nutritions.protein]
+            // ['Chrome', 12.8, true, true],
+            // ['Safari', 8.5],
+            // ['Opera', 6.2],
+            // ['Others', 0.7]
         ]
       }
     ]
   }}},
-  mounted() {},
+  mounted() {
+      eventBus.$on('fruit-selected', (fruit) => {
+      this.pieOptions.series.data[0] = ['Carbohydrates', fruit.nutritions.carbohydrates]
+    })
+  },
   methods: {}
 };        
 </script>
