@@ -29,5 +29,6 @@ export default {
 <style>
  div {
      padding: 10px;
+     cursor: pointer;
  }
 </style>

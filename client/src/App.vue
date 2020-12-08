@@ -4,7 +4,7 @@
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
      
-      <modal id='popup' name='fruit-modal' :width="800" :height="500" :adaptive="true" :draggable="true" :reset="true">
+      <modal id='popup' name='fruit-modal' :width="800" :height='auto' :adaptive="true" :draggable="true" :reset="true">
       <fruit-detail :fruit="selectedFruit"></fruit-detail>
       </modal>
     </div>
@@ -23,7 +23,9 @@ export default {
   data(){
     return {
       fruits: [],
-      selectedFruit: null 
+      selectedFruit: null,
+      auto: "auto" 
+
     }
   },
   mounted(){
@@ -53,7 +55,7 @@ export default {
   components: {
     "fruits-list": FruitsList,
     "fruit-detail": FruitDetail,
-    
+    'fruit-modal': VModal
   
   }
 }
