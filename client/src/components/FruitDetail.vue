@@ -7,7 +7,7 @@
       <h4><b>Family:</b> {{fruit.family}} </h4> 
       <p>Families are plants with many botanical features in common. There are roughly 150-500 different families of plants (the botanists can't agree on how many)!</p>
       <h4><b>Genus:</b> {{fruit.genus}} </h4>
-      <p>Just think of plant names like your last name followed by your first name: Harper John, except that plants are called by their Genus and species: Rosa rugosa.</p>
+      <p>Just think of plant names like your last name followed by your first name: Harper John, except that plants and their seeds/berries/fruits are called by their Genus and Species, such as Malus Domestica, the common Apple.</p>
       <p>
           <span><b>Nutrition (per 100g)</b></span>: 
           Carbohydrates: {{fruit.nutritions.carbohydrates}}g
@@ -16,6 +16,7 @@
           Calories: {{fruit.nutritions.calories}}kcal
           Sugar: {{fruit.nutritions.sugar}}g  
       </p>
+      <p> {{fruit.name}}s originate from {{fruit.origin.country}}, you can see where this is on the map below!
       <div id="mapid">
           <l-map :zoom=2 :center="[ fruit.origin.latitude, fruit.origin.longitude ]">
               <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>
@@ -44,6 +45,8 @@ export default {
 
 <style>
 #mapid {
-    height: 180px;
+    height: 360px;
+    width: 720px;
+    justify-content: center;
 }
 </style>
