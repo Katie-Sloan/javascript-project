@@ -4,10 +4,11 @@
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
      
-      <modal name='fruit-modal' :width="750" :height="auto" :adaptive="true" :scrollable="true" :draggable="true" :reset="true">
+      <modal name='fruit-modal' width="750" height="auto" :adaptive="true" :scrollable="true" :draggable="true" :reset="true">
       <fruit-detail v-if="selectedFruit" :fruit="selectedFruit"></fruit-detail>
       <pie-chart v-if="selectedFruit" :options="pieOptions" :key="chartKey"></pie-chart>
       </modal>
+     
     </div>
   </div>
 </template>
@@ -27,22 +28,22 @@ export default {
       chartKey: 0,
       fruits: [],
       selectedFruit: null,
-      auto: "auto", 
+      // auto: "auto", 
 
       pieOptions: {
-    chart: {
-      type: "pie",
-      options3d: {
-        enabled: true,
-        alpha: 45
-      }
-    },
-    title: {
-      text: "Contents of Highsoft's weekly fruit delivery"
-    },
-    subtitle: {
-      text: "3D donut in Highcharts"
-    },
+        chart: {
+          type: "pie",
+          options3d: {
+          enabled: true,
+          alpha: 45
+          }
+        },
+        title: {
+        text: "Relative proportions of macros"
+        },
+        subtitle: {
+        text: "Carboydrates, fat and protein"
+        },
     plotOptions: {
       pie: {
         allowPointSelect: true,
@@ -56,7 +57,7 @@ export default {
     series: [
       {
         type: 'pie',
-        name: 'Browser share',
+        name: 'Macro proportion',
         keys: ['name', 'y', 'sliced', 'selected'],
         data: [
             
@@ -109,24 +110,36 @@ export default {
 
 <style>
 
+
 div > h1 {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 60pt;
-  color: orange;
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60pt;
+    width: 85%;
+    border: 1px;
+    background-color: rgba(253, 243, 129, 0.906);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    color: rgb(255, 153, 0);
+    
+    box-shadow: 5px 10px 5px orange;
 }
 
-.popup {
-  box-shadow: 5px 10px 5px orange;
+.vm--modal {
+  overflow-y: auto;
+  height: auto;
 }
-
 
 body {
-  background: url('./assets/fruit-background.jpg');
+  background: url('./assets/background_berries.jpg');
   height: 25%;
   background-position: center;
   background-repeat: repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 </style>

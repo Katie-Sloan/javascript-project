@@ -1,7 +1,6 @@
 <template>
   <div id="deets" v-if="fruit">
-      <h2>{{fruit.name}}</h2> {{fruit.emoji}}
-      <br>
+      <h2>{{fruit.name}}  {{fruit.emoji}}</h2> 
       <h4><b>Order:</b> {{fruit.order}} </h4> 
       <p>Orders contain different families. Each order is divided into families.</p>
       <h4><b>Family:</b> {{fruit.family}} </h4> 
@@ -53,6 +52,7 @@ export default {
      font-family: 'Montserrat', sans-serif;
      background-color: rgba(253, 243, 129, 0.906);
      color: orange;
+
  }
 #mapid {
     height: 360px;

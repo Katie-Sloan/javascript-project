@@ -15,5 +15,10 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-Vue.use(VModal)
+Vue.use(VModal, {
+  dynamicDefaults: {
+    draggable: true,
+    resizable: true,
+    height: 'auto'
+  }})
 

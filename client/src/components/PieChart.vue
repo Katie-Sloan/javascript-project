@@ -1,6 +1,5 @@
 <template>
     <section class="charts">
-        <h3>pie-basic</h3>
         <vue-highcharts :options="options" ref="pieChart"></vue-highcharts>
     </section>
 </template>
