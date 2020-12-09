@@ -4,10 +4,15 @@ db.dropDatabase();
 db.fruits.insertMany([
     {
         "genus": "Malus",
-        "name": "Apple",
+        "name": "Apples",
         "emoji": "🍎",
         "family": "Rosaceae",
         "order": "Rosales",
+        "origin": {
+            "country": "Kazakhstan",
+            "latitude": 48.0196,
+            "longitude": 66.9237
+        },
         "nutritions": {
             "carbohydrates": 11.4,
             "protein": 0.3,
@@ -17,10 +22,15 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Prunus",
-        "name": "Apricot",
+        "name": "Apricots",
         "emoji": "🍑",
         "family": "Rosaceae",
         "order": "Rosales",
+        "origin": {
+            "country": "China",
+            "latitude": 35.8617,
+            "longitude": 104.1954
+        },
         "nutritions": {
             "carbohydrates": 3.9,
             "protein": 0.5,
@@ -30,10 +40,15 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Musa",
-        "name": "Banana",
+        "name": "Bananas",
         "emoji": "🍌",
         "family": "Musaceae",
         "order": "Zingiberales",
+        "origin": {
+            "country": "Indonesia",
+            "latitude": 0-0.7893,
+            "longitude": 113.9213 
+        },
         "nutritions": {
             "carbohydrates": 22,
             "protein": 1,
@@ -42,24 +57,34 @@ db.fruits.insertMany([
             "sugar": 17.2
         }
     }, {
-        "genus": "Fragaria",
-        "name": "Blueberry",
-        "emoji": "🫐",
-        "family": "Rosaceae",
-        "order": "Rosales",
+        "genus": "Actinidia",
+        "name": "Kiwis",
+        "emoji": "🥝",
+        "family": "Actinidiaceae",
+        "order": "Ericales",
+        "origin": {
+            "country": "China",
+            "latitude": 35.8617,
+            "longitude": 104.1954
+        },
         "nutritions": {
-            "carbohydrates": 5.5,
-            "protein": 0,
-            "fat": 0.4,
-            "calories": 29,
-            "sugar": 5.4
+            "carbohydrates": 15,
+            "protein": 1.1,
+            "fat": 0.5,
+            "calories": 61,
+            "sugar": 9
         }
     }, {
         "genus": "Prunus",
-        "name": "Cherry",
+        "name": "Cherries",
         "emoji": "🍒",
         "family": "Rosaceae",
         "order": "None",
+        "origin": {
+            "country": "Turkey",
+            "latitude": 38.9637,
+            "longitude": 35.2433
+        },
         "nutritions": {
             "carbohydrates": 12,
             "protein": 1,
@@ -69,10 +94,15 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Citrus",
-        "name": "Lemon",
+        "name": "Lemons",
         "emoji": "🍋",
         "family": "Rutaceae",
         "order": "Sapindales",
+        "origin": {
+            "country": "India",
+            "latitude": 20.5937,
+            "longitude": 78.9629
+        },
         "nutritions": {
             "carbohydrates": 9,
             "protein": 1.1,
@@ -82,10 +112,15 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Mangifera",
-        "name": "Mango",
+        "name": "Mangos",
         "emoji": "🥭",
         "family": "Anacardiaceae",
         "order": "Sapindales",
+        "origin": {
+            "country": "India",
+            "latitude": 20.5937,
+            "longitude": 78.9629
+        },
         "nutritions": {
             "carbohydrates": 15,
             "protein": 0.82,
@@ -95,10 +130,15 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Citrus",
-        "name": "Orange",
+        "name": "Oranges",
         "emoji": "🍊",
         "family": "Rutaceae",
         "order": "Sapindales",
+        "origin": {
+            "country": "China",
+            "latitude": 35.8617,
+            "longitude": 104.1954
+        },
         "nutritions": {
             "carbohydrates": 8.3,
             "protein": 1,
@@ -108,10 +148,15 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Pyrus",
-        "name": "Pear",
+        "name": "Pears",
         "emoji": "🍐",
         "family": "Rosaceae",
         "order": "Rosales",
+        "origin": {
+            "country": "China",
+            "latitude": 35.8617,
+            "longitude": 104.1954
+        },
         "nutritions": {
             "carbohydrates": 15,
             "protein": 0.4,
@@ -121,10 +166,15 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Ananas",
-        "name": "Pineapple",
+        "name": "Pineapples",
         "emoji": "🍍",
         "family": "Bromeliaceae",
         "order": "Poales",
+        "origin": {
+            "country": "Brazil",
+            "latitude": 0-14.2350,
+            "longitude": 0-51.9253
+        },
         "nutritions": {
             "carbohydrates": 13.12,
             "protein": 0.54,
@@ -133,24 +183,34 @@ db.fruits.insertMany([
             "sugar": 9.85
         }
     }, {
-        "genus": "Rubus",
-        "name": "Raspberry",
-        "emoji": "",
-        "family": "Rosaceae",
-        "order": "Rosales",
+        "genus": "Vitis",
+        "name": "Grapes",
+        "emoji": "🍇",
+        "family": "Vitaceae",
+        "order": "Vitales",
+        "origin": {
+            "country": "Greece",
+            "latitude": 39.0742,
+            "longitude": 21.8243
+        },
         "nutritions": {
-            "carbohydrates": 12,
-            "protein": 1.2,
-            "fat": 0.7,
-            "calories": 53,
-            "sugar": 4.4
+            "carbohydrates": 18.1,
+            "protein": 0.7,
+            "fat": 0.1,
+            "calories": 69,
+            "sugar": 15.5
         }
     }, {
         "genus": "Fragaria",
-        "name": "Strawberry",
+        "name": "Strawberries",
         "emoji": "🍓",
         "family": "Rosaceae",
         "order": "Rosales",
+        "origin": {
+            "country": "North America",
+            "latitude": 54.5260,
+            "longitude": 0-105.2551
+        },
         "nutritions": {
             "carbohydrates": 5.5,
             "protein": 0.8,
@@ -160,10 +220,15 @@ db.fruits.insertMany([
         }
     }, {
         "genus": "Solanum",
-        "name": "Tomato",
+        "name": "Tomatoes",
         "emoji": "🍅",
         "family": "Solanaceae",
         "order": "Solanales",
+        "origin": {
+            "country": "The Andes Mountains",
+            "latitude": 0-21.1608,
+            "longitude": 0-66.7752
+        },
         "nutritions": {
             "carbohydrates": 3.9,
             "protein": 0.9,
@@ -177,12 +242,36 @@ db.fruits.insertMany([
         "emoji": "🍉",
         "family": "Cucurbitaceae",
         "order": "Cucurbitales",
+        "origin": {
+            "country": "South Africa",
+            "latitude": 0-30.5595,
+            "longitude": 22.9375
+        },
         "nutritions": {
             "carbohydrates": 8,
             "protein": 0.6,
             "fat": 0.2,
             "calories": 30,
             "sugar": 6
+        }
+    },
+    {
+        "genus": "Persea",
+        "name": "Avocados",
+        "emoji": "🥑",
+        "family": "Lauraceae",
+        "order": "Laurales",
+        "origin": {
+            "country": "Mexico",
+            "latitude": 23.6260,
+            "longitude": 0-102.5375
+        },
+        "nutritions": {
+            "carbohydrates": 8.5,
+            "protein": 2,
+            "fat": 15,
+            "calories": 160,
+            "sugar": 0.7
         }
     }
 ])

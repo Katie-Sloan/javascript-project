@@ -35,6 +35,12 @@ li {
     box-shadow: 5px 10px 5px orange;
 }
 
+li:hover{
+  color: #ff7a59;
+  border: #ff7a59 solid 1px;
+  background:#fff;
+}
+
 .fruit-emoji {
 
 }
