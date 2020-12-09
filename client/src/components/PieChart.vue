@@ -20,3 +20,14 @@ export default {
   methods: {}
 };        
 </script>
+<style>
+.charts {
+  
+     padding: 10px;
+     font-family: 'Montserrat', sans-serif;
+     background-color: rgba(253, 243, 129, 0.906);
+     color: orange;
+
+ 
+}
+</style>

@@ -5,9 +5,12 @@
       <fruits-list :fruits="fruits"></fruits-list>
      
       <modal name='fruit-modal' width="750" height="auto" :adaptive="true" :scrollable="true" :draggable="true" :reset="true">
+        <div class="pop-content">
       <fruit-detail v-if="selectedFruit" :fruit="selectedFruit"></fruit-detail>
       <pie-chart v-if="selectedFruit" :options="pieOptions" :key="chartKey"></pie-chart>
+      </div>
       </modal>
+     
      
     </div>
   </div>
@@ -15,7 +18,7 @@
 
 <script>
 import { eventBus } from './main.js';
-import VModal from './main.js';
+
 import FruitsList from './components/FruitsList.vue';
 import FruitDetail from './components/FruitDetail.vue';
 import FruitService from '@/services/FruitService';
@@ -57,7 +60,7 @@ export default {
     series: [
       {
         type: 'pie',
-        name: 'Macro proportion',
+        name: 'Amount in grams',
         keys: ['name', 'y', 'sliced', 'selected'],
         data: [
             
@@ -102,7 +105,7 @@ export default {
   components: {
     "fruits-list": FruitsList,
     "fruit-detail": FruitDetail,
-    'fruit-modal': VModal,
+    
     "pie-chart": PieChart
   }
 }
@@ -120,6 +123,8 @@ div > h1 {
     background-color: rgba(253, 243, 129, 0.906);
     padding: 20px;
     margin: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
@@ -129,9 +134,9 @@ div > h1 {
     box-shadow: 5px 10px 5px orange;
 }
 
-.vm--modal {
+.pop-content {
   overflow-y: auto;
-  height: auto;
+  height: 100%;
 }
 
 body {

@@ -38,7 +38,7 @@ li {
 li:hover{
   color: #ff7a59;
   border: #ff7a59 solid 1px;
-  background:rgba(255, 255, 255, 0.92);
+  background:rgba(249, 234, 79, 0.906);
 }
 
 .fruit-emoji {
