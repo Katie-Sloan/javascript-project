@@ -6,7 +6,7 @@ import fetch from 'fetch-mock'
 describe('App', () => {
     let wrapper;
     beforeEach(async () => {
-        fetch.once('https://fruityvice.com/api/fruit/all', JSON.stringify(fruitsData));
+        fetch.once('http://localhost:3000/api/fruits', JSON.stringify(fruitsData));
         wrapper = shallowMount(App);
         await wrapper.vm.$nextTick()
         fetch.reset()

@@ -1,6 +1,6 @@
 <template>
   <div id="deets" v-if="fruit">
-      <h2>{{fruit.name}}  {{fruit.emoji}}</h2> 
+      <h2 id="fruit-title">{{fruit.name}}  {{fruit.emoji}}</h2> 
       <h4><b>Order:</b> {{fruit.order}} </h4> 
       <p>Orders contain different families. Each order is divided into families.</p>
       <h4><b>Family:</b> {{fruit.family}} </h4> 
@@ -47,6 +47,11 @@ export default {
 </script>
 
 <style>
+
+#fruit-title {
+font-size: 30px;
+
+}
  #deets {
      padding: 10px;
      font-family: 'Montserrat', sans-serif;
