@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import PieChart from "./PieChart.vue";
 import L from 'leaflet';
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.imagePath = '/';
@@ -39,7 +40,10 @@ L.Icon.Default.mergeOptions({
 });
 export default {
     name: 'fruit-detail',
-    props: ['fruit']
+    props: ['fruit'],
+    components: {
+        "pie-chart": PieChart
+    }
 }
 </script>
 
