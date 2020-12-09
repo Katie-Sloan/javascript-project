@@ -4,7 +4,7 @@
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
      
-      <modal class='popup' name='fruit-modal' :width="800" :height='auto' :adaptive="true" :resizable="true" :draggable="true" :reset="true" :styles="popup">
+      <modal name='fruit-modal' :width="750" :height="auto" :adaptive="true" :scrollable="true" :draggable="true" :reset="true">
       <fruit-detail v-if="selectedFruit" :fruit="selectedFruit"></fruit-detail>
       <pie-chart v-if="selectedFruit" :options="pieOptions" :key="chartKey"></pie-chart>
       </modal>
