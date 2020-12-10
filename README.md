@@ -12,9 +12,7 @@ The app is designed to be easy to use and engaging for children in this age grou
 
 Running instructions
 
-1. Before running, ensure front-end and server are both set up: 
-        - client: npm install, npm run serve
-        - server: mongod, npm run seeds, npm run server:dev. 
+1. Before running, ensure front-end and server are both set up. For the client side you should enter "npm install" and "npm run serve", and for the server side you should enter "mongod", "npm run seeds" and "npm run server:dev". 
 
 2. Main page lists a grid structure showing various fruits.
 
