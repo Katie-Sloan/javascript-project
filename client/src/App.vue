@@ -147,7 +147,7 @@ div > h1 {
 }
 
 #close:hover {
-  color: orangered;
+  color: rgb(255, 184, 4);
 }
 
 .pop-content {
