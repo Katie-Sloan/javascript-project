@@ -41,11 +41,4 @@ li:hover{
   background:rgba(249, 234, 79, 0.906);
 }
 
-.fruit-emoji {
-
-}
-
-.fruit-name {
-
-}
 </style>

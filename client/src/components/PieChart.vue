@@ -5,7 +5,6 @@
 </template>
 <script>
 import VueHighcharts from "vue2-highcharts";
-// import * as data from "../assets/data.js";
 import FruitDetail from "./FruitDetail.vue";
 
 export default {
