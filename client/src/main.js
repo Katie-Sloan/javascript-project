@@ -11,9 +11,11 @@ Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
 Vue.component('l-marker', LMarker);
 
+Vue.use(VModal)
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-Vue.use(VModal)
+
 

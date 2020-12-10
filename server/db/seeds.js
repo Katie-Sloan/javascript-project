@@ -79,7 +79,7 @@ db.fruits.insertMany([
         "name": "Cherries",
         "emoji": "🍒",
         "family": "Rosaceae",
-        "order": "None",
+        "order": "Rosales",
         "origin": {
             "country": "Turkey",
             "latitude": 38.9637,

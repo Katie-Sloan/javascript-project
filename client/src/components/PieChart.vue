@@ -1,12 +1,10 @@
 <template>
     <section class="charts">
-        <h3>pie-basic</h3>
         <vue-highcharts :options="options" ref="pieChart"></vue-highcharts>
     </section>
 </template>
 <script>
 import VueHighcharts from "vue2-highcharts";
-// import * as data from "../assets/data.js";
 import FruitDetail from "./FruitDetail.vue";
 
 export default {
@@ -21,3 +19,14 @@ export default {
   methods: {}
 };        
 </script>
+<style>
+.charts {
+  
+     padding: 10px;
+     font-family: 'Montserrat', sans-serif;
+     background-color: rgba(253, 243, 129, 0.906);
+     color: orange;
+
+ 
+}
+</style>

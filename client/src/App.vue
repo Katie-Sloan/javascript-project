@@ -4,17 +4,21 @@
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
      
-      <modal name='fruit-modal' :width="750" :height="auto" :adaptive="true" :scrollable="true" :draggable="true" :reset="true">
+      <modal name='fruit-modal' width="750" height="auto" :adaptive="true" :scrollable="true" :reset="true">
+      <div class="pop-content">
+      <button id="close" @click="hide()">x</button>
       <fruit-detail v-if="selectedFruit" :fruit="selectedFruit"></fruit-detail>
       <pie-chart v-if="selectedFruit" :options="pieOptions" :key="chartKey"></pie-chart>
+      </div>
       </modal>
+     
     </div>
   </div>
 </template>
 
 <script>
 import { eventBus } from './main.js';
-import VModal from './main.js';
+
 import FruitsList from './components/FruitsList.vue';
 import FruitDetail from './components/FruitDetail.vue';
 import FruitService from '@/services/FruitService';
@@ -27,44 +31,40 @@ export default {
       chartKey: 0,
       fruits: [],
       selectedFruit: null,
-      auto: "auto", 
 
       pieOptions: {
-    chart: {
-      type: "pie",
-      options3d: {
-        enabled: true,
-        alpha: 45
-      }
-    },
-    title: {
-      text: "Contents of Highsoft's weekly fruit delivery"
-    },
-    subtitle: {
-      text: "3D donut in Highcharts"
-    },
-    plotOptions: {
-      pie: {
-        allowPointSelect: true,
+        chart: {
+          type: "pie",
+          options3d: {
+          enabled: true,
+          alpha: 45
+          }
+        },
+        title: {
+        text: "Relative proportions:"
+        },
+        subtitle: {
+        text: "carboydrates, fat and protein (per 100g)"
+        },
+        plotOptions: {
+          pie: {
+            allowPointSelect: true,
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
                 format: '<b>{point.name}</b>: {point.percentage:.1f} %'
             }
-      }
-    },
-    series: [
-      {
-        type: 'pie',
-        name: 'Browser share',
-        keys: ['name', 'y', 'sliced', 'selected'],
-        data: [
-            
-            
+          }
+        },
+        series: [
+          {
+            type: 'pie',
+            name: 'Amount in grams',
+            keys: ['name', 'y', 'sliced', 'selected'],
+            data: []
+          }
         ]
-      }
-    ]
-  } 
+      } 
     }
   },
   mounted(){
@@ -101,7 +101,7 @@ export default {
   components: {
     "fruits-list": FruitsList,
     "fruit-detail": FruitDetail,
-    'fruit-modal': VModal,
+    
     "pie-chart": PieChart
   }
 }
@@ -109,24 +109,57 @@ export default {
 
 <style>
 
+
 div > h1 {
-  text-align: center;
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60pt;
+    width: 85%;
+    border: 1px;
+    background-color: rgb(253, 243, 129);
+    padding: 20px;
+    margin: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+    color: rgb(255, 153, 0);
+    
+    box-shadow: 5px 10px 5px orange;
+}
+
+#close {
   font-family: 'Montserrat', sans-serif;
-  font-size: 60pt;
-  color: orange;
+  background-color:rgba(253, 243, 129, 0.961);
+  color: rgb(255, 153, 0);
+  border-block-color: rgb(255, 153, 0);
+  border-radius: 5px;
+  border: 0px;
+  font-size: 35px;
+  text-emphasis: bold;
+  margin-left: 700px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-.popup {
-  box-shadow: 5px 10px 5px orange;
+#close:hover {
+  color: rgb(255, 184, 4);
 }
 
+.pop-content {
+  overflow-y: auto;
+  height: 100%;
+  background-color: rgba(253, 243, 129, 0.906);
+}
 
 body {
-  background: url('./assets/fruit-background.jpg');
+  background: url('./assets/background_berries.jpg');
   height: 25%;
   background-position: center;
   background-repeat: repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 </style>

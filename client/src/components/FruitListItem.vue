@@ -21,9 +21,9 @@ export default {
 <style>
 
 li {
-    width: 75%;
+    width: 80%;
     border: 1px;
-    background-color: rgba(253, 243, 129, 0.906);
+    background-color: rgb(253, 243, 129);
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -38,14 +38,7 @@ li {
 li:hover{
   color: #ff7a59;
   border: #ff7a59 solid 1px;
-  background:#fff;
+  background:rgb(249, 235, 79);
 }
 
-.fruit-emoji {
-
-}
-
-.fruit-name {
-
-}
 </style>

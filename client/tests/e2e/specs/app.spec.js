@@ -6,8 +6,8 @@ describe('App', () => {
     })
 
     it('should show selected fruit on clicking fruit in list', () => {
-        cy.get('#fruit_select').select('Apple')
-        cy.get('#selected_fruit > h2').contains('Apple')
+        cy.get('li:first').click({shiftKey: true})
+        cy.get('#fruit-title').contains('Apples')
     })
     
 });
