@@ -1,5 +1,7 @@
 # javascript-project
 
+Fruits of the World version 1.0.1
+
 The brief
 
 Our brief was to create a Minimum Viable Product or prototype which could be put forward to the BBC in order to improve their online offering of educational content.  The idea was to create an interactive browser application that displays information in a fun and interesting way. 
@@ -10,9 +12,13 @@ The app is designed to be easy to use and engaging for children in this age grou
 
 Running instructions
 
-1. Main page lists a grid structure showing various fruits.
+1. Before running, ensure front-end and server are both set up: 
+        - client: npm install, npm run serve
+        - server: mongod, npm run seeds, npm run server:dev. 
 
-2. Clicking on an individual fruit will display information about the selected fruit in a pop-up window.  As well as text detailing facts, there is a map showing the fruit’s origin and a pie chart showing the breakdown of its macros. 
+2. Main page lists a grid structure showing various fruits.
+
+3. Clicking on an individual fruit will display information about the selected fruit in a pop-up window.  As well as text detailing facts, there is a map showing the fruit’s origin and a pie chart showing the breakdown of its macros. 
 
 Technologies used
 
