@@ -48,25 +48,25 @@ export default {
         subtitle: {
         text: "Carboydrates, fat and protein"
         },
-        plotOptions: {
-          pie: {
-            allowPointSelect: true,
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
                 format: '<b>{point.name}</b>: {point.percentage:.1f} %'
             }
-          }
-        },
-        series: [
-          {
-            type: 'pie',
-            name: 'Amount in grams',
-            keys: ['name', 'y', 'sliced', 'selected'],
-            data: []
-          }
-        ]
-      } 
+      }
+    },
+    series: [
+      {
+        type: 'pie',
+        name: 'Amount in grams',
+        keys: ['name', 'y', 'sliced', 'selected'],
+        data: []
+      }
+    ]
+  } 
     }
   },
   mounted(){
