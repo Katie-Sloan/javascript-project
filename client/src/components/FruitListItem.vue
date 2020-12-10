@@ -23,7 +23,7 @@ export default {
 li {
     width: 80%;
     border: 1px;
-    background-color: rgba(253, 243, 129, 0.906);
+    background-color: rgb(253, 243, 129);
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -38,7 +38,7 @@ li {
 li:hover{
   color: #ff7a59;
   border: #ff7a59 solid 1px;
-  background:rgba(249, 234, 79, 0.906);
+  background:rgb(249, 235, 79);
 }
 
 </style>

@@ -41,10 +41,10 @@ export default {
           }
         },
         title: {
-        text: "Relative proportions of macros"
+        text: "Relative proportions:"
         },
         subtitle: {
-        text: "Carboydrates, fat and protein"
+        text: "carboydrates, fat and protein (per 100g)"
         },
         plotOptions: {
           pie: {
@@ -116,7 +116,7 @@ div > h1 {
     font-size: 60pt;
     width: 85%;
     border: 1px;
-    background-color: rgba(253, 243, 129, 0.906);
+    background-color: rgb(253, 243, 129);
     padding: 20px;
     margin: 10px;
     margin-left: 70px;
