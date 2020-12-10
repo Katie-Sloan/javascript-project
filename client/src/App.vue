@@ -4,7 +4,7 @@
     <div>
       <fruits-list :fruits="fruits"></fruits-list>
      
-      <modal name='fruit-modal' width="750" height="auto" :adaptive="true" :scrollable="true" :draggable="true" :reset="true">
+      <modal name='fruit-modal' width="750" height="auto" :adaptive="true" :scrollable="true" :reset="true">
       <div class="pop-content">
       <button id="close" @click="hide()">x</button>
       <fruit-detail v-if="selectedFruit" :fruit="selectedFruit"></fruit-detail>
