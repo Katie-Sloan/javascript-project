@@ -5,7 +5,8 @@
       <fruits-list :fruits="fruits"></fruits-list>
      
       <modal name='fruit-modal' width="750" height="auto" :adaptive="true" :scrollable="true" :draggable="true" :reset="true">
-        <div class="pop-content">
+      <div class="pop-content">
+      <button id="close" @click="hide()">x</button>
       <fruit-detail v-if="selectedFruit" :fruit="selectedFruit"></fruit-detail>
       <pie-chart v-if="selectedFruit" :options="pieOptions" :key="chartKey"></pie-chart>
       </div>
@@ -127,16 +128,35 @@ div > h1 {
     margin-right: 70px;
     text-align: center;
     border-radius: 5px;
-    cursor: pointer;
+    
     
     color: rgb(255, 153, 0);
     
     box-shadow: 5px 10px 5px orange;
 }
 
+#close {
+  font-family: 'Montserrat', sans-serif;
+  background-color:rgba(253, 243, 129, 0.961);
+  color: rgb(255, 153, 0);
+  border-block-color: rgb(255, 153, 0);
+  border-radius: 5px;
+  border: 0px;
+  font-size: 35px;
+  text-emphasis: bold;
+  margin-left: 700px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#close:hover {
+  color: orangered;
+}
+
 .pop-content {
   overflow-y: auto;
   height: 100%;
+  background-color: rgba(253, 243, 129, 0.906);
 }
 
 body {

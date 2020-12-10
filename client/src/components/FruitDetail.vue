@@ -50,6 +50,8 @@ export default {
 
 #fruit-title {
 font-size: 30px;
+padding-top: 0px;
+margin-top: 0px;
 
 }
  #deets {
